@@ -1,0 +1,7 @@
+{ ... }:
+
+{
+  programs.topgrade = {
+    enable = true;
+  };
+}
