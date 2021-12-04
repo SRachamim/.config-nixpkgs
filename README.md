@@ -2,7 +2,15 @@
 
 ## Install
 
-1. Install [Nix]
+1. Instal [cURL]
+
+   This is the only way to fetch the nix installation file.
+
+   ```sh
+   sudo apt install curl
+   ```
+
+2. Install [Nix]
 
    Best is to use the [multi-user Nix installation]:
 
@@ -10,7 +18,7 @@
    sh <(curl -L https://nixos.org/nix/install) --daemon
    ```
 
-2. Install [Home Manager]
+3. Install [Home Manager]
 
    Best is to use the [standalone Home Manager installation]:
    
