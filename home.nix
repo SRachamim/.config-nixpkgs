@@ -4,7 +4,7 @@
   home = {
     # Home Manager needs a bit of information about you and the
     # paths it should manage.
-    username = "sahar";
+    username = "saharrachamim";
     homeDirectory = "/home/saharrachamim";
 
     # This value determines the Home Manager release that your
@@ -15,7 +15,7 @@
     # You can update Home Manager without changing this value. See
     # the Home Manager release notes for a list of state version
     # changes in each release.
-    stateVersion = "21.11";
+    stateVersion = "22.05";
 
     # Packages that should be installed to the user profile.
     packages = [
@@ -35,11 +35,6 @@
       pkgs.xclip
       pkgs.xorg.xrandr
     ];
-
-    activation = {
-    #   bitDefender = lib.hm.dag.entryAfter ["writeBoundary"] (builtins.replaceStrings ["TARBALL"] [(builtins.toString ./activation/bitDefender.sh.d/installer.tar)] (builtins.readFile ./activation/bitDefender.sh));
-    #   jumpCloud = lib.hm.dag.entryAfter ["writeBoundary"] (builtins.readFile ./activation/jumpCloud.sh);
-    };
 
     file = {
       "neofetch-config.conf" = {
